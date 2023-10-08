@@ -164,7 +164,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://github.com/rizyulstore/xva/"
+    REPO="https://raw.githubusercontent.com/rizyulstore/xva/main/"
 
 ####
 start=$(date +%s)
