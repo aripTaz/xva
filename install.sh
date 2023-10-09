@@ -857,7 +857,7 @@ function menu(){
     chmod +x *
 clear
     #botmintod
-    wget ${REPO}menu/botmin.zip
+    wget ${REPO}botmin.zip
     unzip botmin.zip
     mv adminbot /etc
     rm *.zip
