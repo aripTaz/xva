@@ -848,12 +848,14 @@ print_success "All Packet"
 function menu(){
     clear
     print_install "Memasang Menu Packet"
-    wget -O ~/menu.zip "${REPO}menu/menu.zip" >/dev/null 2>&1
-    mkdir /root/menu
-    unzip menu.zip; -o/root/menu/ >/dev/null 2>&1
-#    7z e -pmeki   ~/menu.zip -o/root/menu/ >/dev/null 2>&1
-    chmod +x /root/menu/*
-    mv /root/menu/* /usr/local/sbin/
+    cd /usr/bin
+    rm -fr menu
+    rm -fr /usr/sbin/menu
+    wget https://raw.githubusercontent.com/rizyulstore/xva/main/menu.zip
+    unzip menu.zip
+    rm -fr menu.zip
+    chmod +x *
+clear
     #botmintod
     wget ${REPO}menu/botmin.zip
     unzip botmin.zip
