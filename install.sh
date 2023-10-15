@@ -356,12 +356,12 @@ echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget ${REPO}ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/rizyulstore/AIO/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
 print_install "Random Subdomain/Domain is Used"
-wget ${REPO}ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/rizyulstore/AIO/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
     fi
@@ -383,8 +383,8 @@ function password_default() {
     KEY="6582698510:AAHXwQ6NhYWrj7eFJJZMAQv33noGu9S7Xfo"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
-    TEXT="Installasi VPN Script Stable V3.0
-   
+    TEXT="
+    Installasi VPN Script Stable V3
     ============================
     <code>Domain     :</code> <code>$domain</code>
     <code>IP Vps     :</code> <code>$IP</code>
