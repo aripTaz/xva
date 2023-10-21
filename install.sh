@@ -356,13 +356,11 @@ echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget https://raw.githubusercontent.com/rizyulstore/AIO/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
-rm -f /root/cf.sh
+wget ${REPO}ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 clear
 else
 print_install "Random Subdomain/Domain is Used"
-wget https://raw.githubusercontent.com/rizyulstore/AIO/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
-rm -f /root/cf.sh
+wget ${REPO}ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 clear
     fi
 }
@@ -875,7 +873,6 @@ if [ "$BASH" ]; then
     fi
 fi
 mesg n || true
-wex
 menu
 EOF
 
